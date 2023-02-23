@@ -1,0 +1,69 @@
+header{
+    background: rgb(64, 235, 64);
+    text-align: center;
+}
+
+header nav a{
+    color: #fff;
+    text-decoration: none;
+
+    border-right: 2px solid black;
+}
+
+nav{
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+}
+
+#nav2{
+    background-color: green;
+    width: 59.5%;
+    text-align: left;
+}
+
+#last{
+    border-right: none ;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.container img{
+    width: 70px;
+    height: 80px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+tr, td{
+    border: 1px solid;
+}
+
+td  {
+    text-align: center;
+}
+
+tbody tr th {
+    text-align: left;
+    color: blue;
+}
+
+.ferie {
+    color: rgb(186, 186, 22);
+}
+
+.back_ferie {
+    background-color: rgb(92, 115, 92);
+}
+
+thead, .non_ferie{
+    background-color: rgb(201, 209, 201);
+}
+
+td.ferie{
+    border-color: black;
+}

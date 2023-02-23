@@ -1,0 +1,8 @@
+section{
+    display: table;
+}
+
+section div{
+    display: table-cell;
+    text-align: center;
+}

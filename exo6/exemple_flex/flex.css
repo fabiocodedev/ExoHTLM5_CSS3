@@ -1,0 +1,123 @@
+/******************* STYLE GENERAL *******************/
+body { font-family: verdana; font-size: 13px; }	
+div {
+		background-color: gray;
+		height: 100px;
+		line-height: 100px;
+		text-align: center;
+		margin: 1%;
+		color: white;
+		font-size: 25px;
+}
+h1{ text-align: center;}
+section{ border: 2px solid red; padding: 10px;	}
+/* >> La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur << */
+/************************************** EXEMPLE 1 : FLEX  (display: flex + flex: auto) **************************************/
+.container1{ display: flex; width: 960px; margin: 0 auto; } /* les éléments à l'intérieur de .container1 vont être côte à côte. */
+.item1{ flex: auto; } /* les éléments à l'intérieur de .container1 vont avoir une largeur proportionnelle. */
+
+
+/************************************** EXEMPLE 2 : FLEX (display: flex + flex: auto + flex-grow: 1) **************************************/
+.container2{ display: flex; width: 960px; margin: 0 auto; } /* les éléments à l'intérieur de .container vont être côte à côte. */
+.item2-1{ width: 500px; } /* l'item2-1 aura une taille de 500px. */
+.item2{ flex: auto; flex-grow: 1;  } /* Grâce à la propriété flex-grow, tous les éléments contenu dans le container auront une largeur proportionnelle sur l'espace qu'ils le resteront (960px - 500px). */
+
+
+/************************************** EXEMPLE 3 : FLEX  (display: flex + flex-grow: 2) **************************************/
+.container3{ display: flex; width: 960px; margin: 0 auto; } /* les éléments à l'intérieur de .container vont être côte à côte. */
+.item3{	flex-grow: 1; } /* chaque élément prendra une place. donc (sans le padding) sur une largeur de 960px / 4 = chaque element fera 240px. */
+.item3-2{flex-grow: 2; } /* flex-grow : 2; permettra de prendre 2 places (soit 50% de la zone), et il restera 16,66% pour chacun des autres items.
+/* pour gérer les largeurs valeur 1 => tous les éléments sont de même largeur: 100%/nombre_item */
+		/*
+			exemple :
+			4 éléments:flex-grow: 1; => 25% pour chacun
+			2 éléments: flex-grow: 2; => 50%
+			1 élément: flex-grow: 2; => 50% + 2 éléments: flex-grow: 1; => 25% pour chacun		
+		*/
+/* En présence du flex-grow, nous pouvons nous passer du flex auto.
+
+/************************************** EXEMPLE 4 : FLEX  (display: flex + flex-grow: 1) **************************************/
+.container4{ display: flex; width: 960px; margin: 0 auto; } /* les éléments à l'intérieur de .container vont être côte à côte. */
+.item4{ flex-grow: 2; }
+
+
+/************************************** EXEMPLE 5 : FLEX  (display: flex + flex-grow: 1) **************************************/
+.container5{ display: flex; width: 960px; margin: 0 auto; } /* les éléments à l'intérieur de .container vont être côte à côte. */
+/* .item5{ flex-grow: 1; order: 3; } order = priorité d'affichage = en 2e */
+.item5-3 { order: 1; } /* order = priorité d'affichage = en 1e */
+.item5-4 { order: 2; } /* order = priorité d'affichage = en 1e */
+
+
+/************************************** EXEMPLE 6 : FLEX  (display: flex + flex-direction: row) **************************************/
+.container6{ display: flex;  flex-direction: row /* row-reverse | column | column-reverse */;   width: 960px; margin: 0 auto;  } /* les éléments à l'intérieur de .container vont être côte à côte. */
+.item6{ flex-grow: 1; } /* Grâce à la propriété flex-grow, tous les éléments contenu dans le container auront une largeur proportionnelle sur l'espace qu'ils le resteront (960px - 500px). */
+/* flex-direction: row est la direction par défaut. */
+
+
+/************************************** EXEMPLE 7 : FLEX  (display: flex + flex-direction: row-reverse) **************************************/
+.container7{ display: flex; flex-direction: row-reverse; /* row-reverse | column | column-reverse */   width: 960px; margin: 0 auto;  } /* les éléments à l'intérieur de .container vont être côte à côte. */
+.item7{ flex-grow: 1; } /* Grâce à la propriété flex-grow, tous les éléments contenu dans le container auront une largeur proportionnelle sur l'espace qu'ils le resteront (960px - 500px). */
+/* flex-direction: row-reverse permet d'afficher chaque item de la fin vers le début (sens inverse). */
+
+
+/************************************** EXEMPLE 8 : FLEX  (display: flex + flex-direction: column + flex-wrap: wrap + 	justify-content: center; + align-items: center;) **************************************/
+.container8{ display: flex; flex-direction: column;   height: 500px;  flex-wrap: wrap; 	justify-content: center; align-items: center;  width: 960px; margin: 0 auto; } /* les éléments à l'intérieur de .container vont être côte à côte. */
+.item8{   width: 150px; } /* Grâce à la propriété flex-grow, tous les éléments contenu dans le container auront une largeur proportionnelle sur l'espace qu'ils le resteront (960px - 500px). */
+/* flex-wrap: wrap; les éléments passent à la ligne dans le sens de lecture) */
+/* flex-wrap: nowrap ; les éléments ne passent pas à la ligne, valeur par défaut) */
+/* flex-wrap: wrap-reverse; les éléments passent à la ligne dans le sens inverse) */
+/* align-items: center; permet de centrer les éléments sur l'axe horizontal */
+/* justify-content: center; permet d'aligner au centre verticalement */
+/* justify-content: flex-start; permet d'aligner en haut verticalement */
+/* justify-content: flex-end; permet d'aligner en bas verticalement */
+/* justify-content: space-between; permet de prévoir un espace entre chaque element. */
+
+
+/************************************** EXEMPLE 9 : FLEX  (display: flex + flex-direction: column + flex-wrap: wrap + 	justify-content: center; + align-items: center;) **************************************/
+.container9{ display: flex; flex-direction: column;   height: 500px;  flex-wrap: wrap; 	justify-content: center; align-items: center;  width: 960px; margin: 0 auto; } /* les éléments à l'intérieur de .container vont être côte à côte. */
+.item9{   width: 150px; height: 50px; line-height: 50px; flex: 1;  } 
+.item9-1{   flex: 2; } 
+/* flex 1 permet de prendre 1 place sur l'espace de la hauteur */
+/* flex 2 permet de prendre 2 place sur l'espace de la hauteur */
+
+/*********************************************************************************************************************************/
+
+
+/************************************** EXEMPLE 9 : FLEX  (display: flex + flex-direction: column + flex-wrap: wrap + justify-content: center; + align-items: center;) **************************************/
+.container10{ display: flex; justify-content: flex-start; width: 960px; margin: 0 auto; } /* les éléments à l'intérieur de .container vont être côte à côte. */
+.item10{  width: 150px; } 
+
+/************************************** EXEMPLE 9 : FLEX  (display: flex + flex-direction: column + flex-wrap: wrap + justify-content: center; + align-items: center;) **************************************/
+.container11{ display: flex; justify-content: flex-end; width: 960px; margin: 0 auto; } /* les éléments à l'intérieur de .container vont être côte à côte. */
+.item11{  width: 150px; } 
+
+/************************************** EXEMPLE 9 : FLEX  (display: flex + flex-direction: column + flex-wrap: wrap + justify-content: center; + align-items: center;) **************************************/
+.container12{ display: flex; justify-content: center; width: 960px; margin: 0 auto; } /* les éléments à l'intérieur de .container vont être côte à côte. */
+.item12{  width: 150px; } 
+
+/************************************** EXEMPLE 9 : FLEX  (display: flex + flex-direction: column + flex-wrap: wrap + justify-content: center; + align-items: center;) **************************************/
+.container13{ display: flex; justify-content: space-between; width: 960px; margin: 0 auto; } /* les éléments à l'intérieur de .container vont être côte à côte. */
+.item13{  width: 150px; } 
+
+/************************************** EXEMPLE 9 : FLEX  (display: flex + flex-direction: column + flex-wrap: wrap + justify-content: center; + align-items: center;) **************************************/
+.container14{ display: flex; justify-content: space-around; width: 960px; margin: 0 auto; } /* les éléments à l'intérieur de .container vont être côte à côte. */
+.item14{  width: 150px; } 
+
+/************************************** EXEMPLE 9 : FLEX  (display: flex + flex-direction: column + flex-wrap: wrap + justify-content: center; + align-items: center;) **************************************/
+.container15{ display: flex; justify-content: center; align-items: center; width: 960px; height: 350px; margin: 0 auto; } /* les éléments à l'intérieur de .container vont être côte à côte. */
+.item15{  width: 150px; } 
+
+
+/************************************** EXEMPLE 9 : FLEX  (display: flex + flex-direction: column + flex-wrap: wrap + justify-content: center; + align-items: center;) **************************************/
+.container16{ display: flex; justify-content: center; align-items: center; width: 960px; height: 350px; margin: 0 auto; } /* les éléments à l'intérieur de .container vont être côte à côte. */
+.item16{  width: 150px; } 
+.item16-2{  align-self: flex-end;  } 
+
+
+/*********************************************************************************************************************************/
+/*
+Divers :
+	flex: initial;
+		align-items: stretch;
+Les propriétés: float, clear, vertical-align ne fonctionnent pas sur des éléments flex
+*/

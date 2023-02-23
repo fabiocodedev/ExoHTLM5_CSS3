@@ -1,0 +1,408 @@
+
+
+<!-- Sélecteurs CSS -->
+
+* = Sélection tous les éléments
+E,F = Sélectionne tous les éléments de type E et de type F
+E F = Sélectionne tous les éléments F à l’intérieur des éléments E
+E > F = Sélectionne les éléments F enfants directs des éléments E
+E + F = Sélectionne tout élément F placé directement après un élément E
+E~F = Sélectionne tout élément F placé après un élément E dans la page
+
+
+/* Display bloc, inline */
+
+display : block : affichage sous forme d’un bloc ;
+display : inline : affichage en ligne ;
+display : none : l’élément n’est pas affiché.
+
+
+
+Les éléments de type inline vont posséder les caractéristiques suivantes qui vont les différencier des éléments de type block :
+
+Un élément de type inline ne va occuper que la largeur nécessaire à l’affichage de son contenu par défaut ;
+Les éléments de type inline vont venir essayer de se placer en ligne, c’est-à-dire à côté (sur la même ligne) que l’élément qui les précède dans le code HTML ;
+Un élément de type inline peut contenir d’autres éléments de type inline mais ne devrait pas contenir d’éléments de type block.
+De plus, notez qu’on ne va pas par défaut pouvoir appliquer de propriété width ou height à un élément de type inline puisque la caractéristique principale de ce type d’éléments est de n’occuper que la place nécessaire à l’affichage de leur contenu.
+
+
+Les éléments de type block vont posséder les caractéristiques de disposition suivantes :
+
+Un élément de type block va toujours prendre toute la largeur disponible au sein de son élément parent (ou élément conteneur) ;
+Un élément de type block va toujours « aller à la ligne » (créer un saut de ligne avant et après l’élément), c’est-à-dire occuper une nouvelle ligne dans une page et ne jamais se positionner à côté d’un autre élément par défaut ;
+Un élément de type block peut contenir d’autres éléments de type block ou de type inline.
+
+/* Long hand / Short hand */
+
+
+/*Le "padding" ou marge intérieure est l'espace entre le contenu d'un élément et ses bordures*/
+
+p{
+    border: 2px solid red;
+  }
+  
+  /*Définition du padding haut/droit/bas/gauche (dans l'ordre des valeurs)*/
+#p1{
+    padding: 5px 20px 30px 20px;
+  }
+  /*Définition du padding haute/droit+gauche/bas (dans l'ordre des valeurs)*/
+#p2{
+    padding: 5px 20px 30px;
+  }
+
+font	font-style, font-variant, font-weight, font-size, line-height, font-family
+
+border	border-width, border-style, border-color
+
+margin	margin-top, margin-right, margin-bottom, margin-left
+
+padding	padding-top, padding-right, padding-bottom, padding-left
+
+background	background-image, background-position, background-size, background-repeat, background-origin, background-clip, background-attachment, background-color
+
+transition	transition-property, transition-duration, transition-timing-function, transition-delay
+
+animation	animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, animation-play-state
+
+flex	flex-shrink, flex-grow, flex-basis
+
+
+/* La propriété FONT */
+
+La propriété font-size qui va nous permettre de modifier la taille de notre police ;
+La propriété font-weight qui va nous permettre de modifier le poids de notre police ;
+La propriété font-style qui va nous permettre de modifier l’inclinaison de notre police.
+
+.conteneur{
+    width: 400px;
+    color: white;
+    border: 1px solid black;/*Crée une bordure autour du div*/
+  }
+  
+#d1{
+    font-size: 16px; /*Taille (hauteur) du texte : 16px*/
+    width: 50%;/*Largeur égale à 50% de celle de l'élément parent = 400px / 2 = 200px**/
+    background-color: blue;
+  }
+ #d2{
+    font-size: 16px; /*Taille (hauteur) du texte : 16px*/
+    width: 2em; /*Largeur égale à 2 fois 16px = 32px*/
+    background-color: purple;
+  }
+
+  La propriété CSS font-weight va nous permettre de définir le poids d’une police, c’est-à-dire son épaisseur.
+
+  Cette propriété va pouvoir prendre un mot clef ou un chiffre exprimé en centaine(s) en valeur. Nous allons ainsi pouvoir choisir parmi les valeurs suivantes :
+  
+  Le mot clef normal : valeur par défaut qui correspond à un poids de police « normal » ;
+  Le mot clef lighter qui va définir une police d’écriture plus fine que pour la valeur normal ;
+  Le mot clef bold qui va définir une police d’écriture plus épaisse que pour la valeur normal ;
+  Le mot clef bolder qui va définir une police d’écriture très épaisse ;
+  Une centaine entre 100 (qui correspond à une police très fine) et 900 (pour une police très épaisse). En termes d’équivalence avec les mots clefs, vous pouvez retenir que la valeur 400 est équivalente au mot clef normal et que la valeur 700 est équivalente au mot clef bold.
+
+  body{
+    font-family: Verdana, sans-serif;
+  }
+  
+  h1{
+    font-weight: 400;/*Identique à font-weight: normal*/
+  }
+  
+  #p1{
+      font-weight: bold;/*Identique à font-weight: 700*/
+  }
+  
+  #p2{
+      font-weight: lighter;
+  }
+
+
+  La propriété font-style va nous permettre de gérer l’inclinaison de notre police.
+
+On va pouvoir lui passer l’une des valeurs suivantes :
+
+normal : valeur par défaut, les caractères seront droits ;
+italic : la police va s’afficher en italique ;
+oblique : la police va être tordue pour être rendue de façon oblique.
+
+body{
+    font-family: Verdana, sans-serif;
+  }
+  
+  /*Le texte de notre paragraphe p1 s'affiche en gras et en italique*/
+  #p1{
+      font-style: bold;
+      font-style: italic;
+  }
+  
+  /*Le texte de notre paragraphe p2 s'affiche en oblique*/
+  #p2{
+
+
+
+    /* Propriété CSS liées au texte */
+
+    La propriété text-align qui va nous permettre de gérer l’alignement du texte ;
+La propriété text-transform qui va nous permettre de gérer la casse du texte (le fait que le texte soit en majuscules ou en minuscules) ;
+La propriété text-decoration qui va nous permettre d’ajouter des éléments de décoration autour du texte comme un trait de soulignement par exemple ;
+La propriété text-indent qui va nous permettre de définir l’indentation d’un texte ;
+La propriété text-shadow qui va nous permettre d’ajouter des ombres autour d’un texte.
+
+
+
+
+left : valeur par défaut. Le texte sera aligné contre le bord gauche de l’élément qui le contient ;
+center : Le texte sera centré dans l’élément qui le contient ;
+right : Le texte sera aligné contre le bord droite de l’élément qui le contient ;
+justify : Le texte sera justifié (les écarts entre les mots vont être calculés de façon à ce que chaque ligne de texte occupe la même largeur).
+
+h1{
+    text-align: center;
+}
+/*Texte aligné à gauche p/r à l'élément parent (le div)*/
+.p1{
+    text-align: left;
+}
+/*Texte aligné à droite p/r à l'élément parent (le div)*/
+.p2{
+    text-align: right;
+}
+
+
+
+
+
+
+none : Valeur par défaut. Pas de transformation du texte. Utile pour annuler une transformation transmise par héritage par exemple ;
+lowercase : Transforme tout le texte d’un élément en minuscules ;
+uppercase : Transforme tout le texte d’un élément en majuscules ;
+capitalize : Transforme la première lettre de chaque mot en majuscule ;
+
+h1{
+    text-transform: uppercase;
+}
+
+.p1{
+    text-transform: lowercase;
+}
+
+.p2{
+    text-transform: capitalize;
+}
+
+
+
+
+
+Concernant le type de décoration, nous allons pouvoir choisir parmi les valeurs :
+
+underline : ajoute un trait de soulignement au texte ;
+overline : ajoute un trait de surlignement au texte ;
+line-through : ajoute un trait qui va barrer le texte ;
+underline overline : ajoute un trait de soulignement et un trait de surlignement au texte.
+Concernant le style de la décoration, nous allons pouvoir choisir parmi les valeurs :
+
+solid : valeur par défaut ; le trait de décoration sera solide ;
+double : le trait de décoration sera double ;
+dotted : le trait de décoration sera en pointillés ;
+dashed : le trait de décoration sera en tirets ;
+wavy : le trait de décoration sera courbé.
+
+
+h1{
+    text-decoration: underline;
+}
+.p1{
+    text-decoration: underline overline red;
+}
+.p2{
+    text-decoration: overline dashed;
+}
+.p3{
+  text-decoration: underline wavy;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+Notez également qu’à l’heure actuelle la définition de la propriété text-decoration est en train d’évoluer puisque de nouvelles sous propriétés CSS nous permettant de gérer un aspect de la décoration à la fois ont été dernièrement proposées. Si cette nouvelle définition est acceptée, alors la propriété text-decoration deviendra la notation raccourcie des propriétés suivantes :
+
+text-decoration-line qui permet de définir une décoration autour du texte ;
+text-decoration-color qui permet de choisir la couleur de la décoration (noire par défaut) ;
+text-decoration-style qui permet de choisir le style de la décoration (solide par défaut).
+La propriété text-decoration-line va accepter les valeurs suivantes :
+
+underline : ajoute un trait de soulignement au texte ;
+overline : ajoute un trait de surlignement au texte ;
+line-through : ajoute un trait qui va barrer le texte ;
+underline overline : ajoute un trait de soulignement et un trait de surlignement au texte.
+La propriété text-decoration-style va accepter les valeurs suivantes :
+
+solid : valeur par défaut ; le trait de décoration sera solide ;
+double : le trait de décoration sera double ;
+dotted : le trait de décoration sera en pointillés ;
+dashed : le trait de décoration sera en tirets ;
+wavy : le trait de décoration sera courbé.
+A noter cependant que pour le moment ces propriétés ne sont pas encore officielles et vont pas encore forcément supportées par tous les navigateurs. Elles devraient cependant bientôt le devenir et c’est pourquoi je les mentionne dans ce cours.
+
+
+h1{
+    text-decoration: underline;
+}
+
+.p1{
+    text-decoration: underline overline red;
+}
+/*Même chose qu'au dessus mais en version longue*/
+.p1bis{
+  text-decoration-line: underline overline;
+  text-decoration-color: red;
+}
+
+.p2{
+    text-decoration: overline dashed;
+}
+
+.p3{
+  text-decoration: underline wavy;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+La propriété text-indent va nous permettre de préciser l’indentation c’est-à-dire le retrait de la première ligne d’un texte par rapport au bord de l’élément parent.
+
+h1{
+    text-indent: -50px;
+}
+
+.p1{
+    text-indent: 20px;
+}
+
+.p2{
+    text-indent: 20%;/*De l'élément parent c'est-à-dire du body*/
+}
+
+
+
+La propriété text-shadow va nous permettre d’ajouter des ombres autour de nos textes. Cette propriété est relativement complexe à maitriser puisqu’elle va pouvoir utiliser jusqu’à 4 valeurs pour définir précisément une ombre et surtout puisqu’on va pouvoir appliquer plusieurs ombres différentes à un même texte grâce à elle.
+
+Les 4 valeurs de text-shadow vont correspondre :
+
+Au déplacement (ou « projection ») horizontal de l’ombre par rapport au texte. En passant une valeur positive, l’ombre est projeté à droite du texte. En passant une valeur négative, l’ombre est projetée à gauche de celui-ci. Cette valeur doit obligatoirement être renseignée ;
+Au déplacement vertical de l’ombre par rapport au texte. En passant une valeur positive, l’ombre est projeté sous le texte. En passant une valeur négative, l’ombre est projetée au-dessus de celui-ci. Cette valeur doit obligatoirement être renseignée ;
+Au rayon de flou de l’ombre. Un flou Gaussien est utilisé ici : plus la valeur est grande, plus l’ombre sera étendue et floue. Cette valeur est facultative ;
+A la couleur de l’ombre. On va ici pouvoir passer toutes les valeurs de couleurs (que nous étudierons plus tard) disponibles.
+
+
+h1,p{
+    font-size: 2em;
+  }
+  
+  /*Ombre noire en bas à droite, nette*/
+  h1{
+      text-shadow: 5px 5px;
+  }
+  
+  /*Ombre bleue en bas à gauche, nette*/
+  .p1{
+      text-shadow: -5px 2px 1px blue;
+  }
+  
+  /*Ombre rouge centrée sur le texte (décalement horizontal et vertical de 0px), floue*/
+  .p2{
+      text-shadow: 0px 0px 5px red;
+  }
+
+
+
+/* Padding */
+
+On va en effet pouvoir passer entre 1 et 4 valeurs à la propriété raccourcie padding :
+
+En passant une valeur à padding, la valeur passée définira le comportement des 4 marges intérieures de l’élément ;
+En passant deux valeurs à padding, la première valeur passée définira le comportement des marges intérieures supérieure et inférieure de l’élément tandis que la seconde valeur définira le comportement des marges intérieures gauche et droite de l’élément ;
+En passant trois valeurs à padding, la première valeur passée définira le comportement de la marge interne supérieure, la deuxième définira le comportement des marges intérieures gauche et droite tandis que la troisième définira le comportement de la marge interne basse ;
+En passant quatre valeurs à padding, la première valeur passée définira le comportement de la marge interne supérieure, la deuxième définira le comportement de la marge interne droite, la troisième celui de la marge interne basse et la quatrième celui de la marge interne gauche.
+
+p{
+    background-color: lightGreen;
+    border: 1px solid black;
+  }
+  
+  /*Padding top et bottom = 10px
+   *Padding left et right = 50px*/
+  .p2{
+    padding: 10px 50px;
+  }
+  
+  .p3{
+    padding-left: 100px;
+    padding-bottom: 20px;
+  }
+
+
+
+  /* Width et height */
+
+  Pour comprendre comment fonctionnent les propriétés width et height et comment les manipuler il est avant tout nécessaire d’avoir une vue claire sur les types d’affichage principaux des éléments : l’affichage block (sous forme de bloc) et inline (en ligne).
+
+En effet, je vous rappelle que les éléments HTML peuvent être affichées de deux grandes façons différentes : soit sous forme de bloc, soit en ligne.
+
+Les dimensions par défaut du contenu des éléments HTML vont avant tout être déterminées par le type d’affichage des éléments : en effet, les éléments de type block occuperont par défaut toute la largeur disponible dans leur élément parent tandis que les éléments de type inline n’occuperont que la largeur nécessaire à leur contenu.
+
+Vous pouvez ainsi déjà retenir ici que nous n’allons pas pouvoir modifier la taille de l’espace pris par le contenu des éléments de type inline avec les propriétés width et height : les valeurs qu’on va pouvoir définir vont tout simplement être ignorées.
+
+Ensuite, afin d’être certain que le design général de notre page ne sera pas impacté, on peut également utiliser la propriété overflow et en particulier sa valeur hidden sur l’élément parent. Cela va avoir pour effet de tronquer tout le contenu qui dépasse de l’élément. Si l’on souhaite que le contenu reste accessible, on peut utiliser overflow : scroll qui va proposer une barre de défilement dans l’élément parent.
+
+
+
+
+  
+
+  /* Largeur (width) et hauteur (height) de la boite de contenu des éléments HTML */
+
+
+  Notez bien ici que modifier la taille de la boite du contenu d’un élément de type block ne change pas les propriétés fondamentales de celui-ci. J’entends par là qu’un élément de type block commencera toujours sur une nouvelle ligne et ne viendra jamais se positionner à côté d’un autre élément de type block quelle que soit sa taille.
+
+  Les propriétés width et height vont pouvoir accepter plusieurs types de valeurs :
+
+  Des valeurs de type « longueur » qui vont être généralement exprimées en px ou en em ;
+  Des valeurs en pourcentage, auquel cas le pourcentage donné sera relatif à la dimension de l’élément parent.
+
+  Ensuite, afin d’être certain que le design général de notre page ne sera pas impacté, on peut également utiliser la propriété overflow et en particulier sa valeur hidden sur l’élément parent. Cela va avoir pour effet de tronquer tout le contenu qui dépasse de l’élément. Si l’on souhaite que le contenu reste accessible, on peut utiliser overflow : scroll qui va proposer une barre de défilement dans l’élément parent.
+
+  p, span{
+    font-size: 1em;
+  }
+  
+  .d1{
+    width: 50%;
+    height: 200px;
+    border: 1px solid black;
+    overflow: hidden;
+  }
+  .d2{
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+  }
+
+  .p1{
+    background-color: lightBlue;
+    width: 200px;
+    height: 60px;
+    overflow: scroll;
+  }
+
+
+  /* Gestion des bordures avec la propriété CSS border */
+
+  

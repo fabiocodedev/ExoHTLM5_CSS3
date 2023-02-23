@@ -1,0 +1,92 @@
+header{
+   background: rgb(72, 190, 56);
+   text-align: center;
+   display:table;
+   width:100%;
+   height:50px;
+
+}
+nav {
+   display:table-cell;
+   text-align:right;
+   vertical-align:middle;
+}
+#nav2{
+   width:calc(100% / 2);
+   background:green;
+   text-align:left   ;
+}
+header nav a {
+   color: white;
+   text-decoration: none;
+   padding: 5px 30px 10px 20px;
+   border-right: 1px solid white;
+}
+
+.border-left{
+   border-right:none;
+}
+
+.container{
+   width: 50%;
+   margin:auto;
+}
+/* 
+header nav span {
+   background:green;
+}
+
+header nav span a{
+   border-right: 1px solid white;
+}
+
+header nav span a#group{
+   border-right: none;
+
+} */
+
+.container #img{
+   
+   text-align:center;
+}
+
+.container a{
+   font-size:25px;
+   font-weight:bold;
+}
+
+
+table{
+   border-collapse: collapse;
+}
+td,th{
+   border: 1px solid;
+   text-align: inherit;
+}
+
+td{
+   text-align: center;
+
+}
+
+.jourOuvert{
+   background:yellow;
+}
+
+
+.jourFerme{
+   background:gray;
+}
+
+/****formation*****/
+.container section {
+   display:table;
+   width:80%;
+   margin:auto;
+}
+.container section div {
+   display:table-cell;
+   vertical-align: middle;
+   text-align:center;
+}
+

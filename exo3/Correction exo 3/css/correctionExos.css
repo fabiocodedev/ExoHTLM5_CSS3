@@ -1,0 +1,35 @@
+header, footer{
+    background:rgb(255, 128, 0);
+    height: 100px;
+}
+header{
+    color: blue;
+    text-align: center;
+}
+
+nav{
+    background: rgb(120, 239, 225);
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    width: 150px;
+}
+section {
+    background: yellow;
+    height: 300px;
+}
+
+table{
+    border-collapse: collapse;
+}
+tr, td ,th{
+    border: 2px solid;
+}
+
+th{
+    background: deeppink;
+}

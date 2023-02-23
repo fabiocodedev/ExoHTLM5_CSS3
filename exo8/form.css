@@ -1,0 +1,74 @@
+body{
+    font-family: "Arial";
+    margin: 30px;
+    width: 600px;
+}
+form{
+    background: linear-gradient(rgb(211, 210, 210), rgb(88, 88, 88));
+    background-color: grey;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 3px 3px  grey;
+}
+section{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h3{
+    border-bottom: 1px solid rgb(78, 78, 78);
+    color: rgb(26, 26, 26);
+}
+a{
+    padding: 34px;
+    color: black;
+}
+label{
+    font-weight:bolder;
+    padding: 15px; 
+    font-size: 20px;
+}
+div label{
+    display:inline-block
+}
+
+#fixe label, #hidden label{
+    width: 160px;
+}
+footer{
+    display: flex;
+    padding: 20px 0 50px 215px;
+
+}
+#E{
+    background-color: rgb(93, 169, 255);
+    border-radius: 5px;
+    width: 100px;
+    color: white;
+    border: 1px solid black;
+}
+p{
+    padding-left: 5px;
+}
+#A{
+   background-color:transparent;
+   border: none; 
+   text-decoration: underline;
+   font-size: 16px;
+}
+
+
+
+#hidden{
+    display: none;
+} 
+
+#hidden #close{
+    display: block;
+}
+#hidden:target  #close{
+    display: block;
+} 
+
+ #close{
+    display: none;
+} 

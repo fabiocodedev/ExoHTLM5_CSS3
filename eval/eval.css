@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+}
+/* ENTETE */
+header{
+    background-color: rgb(255, 255, 255); 
+}
+header section{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    margin-top: 2%;
+}
+/* BLOCKS */
+.block{
+    display: block;
+    width: 100%;
+}
+.block img{
+    padding-top: 40px;
+}
+#flex{
+    border: 1px solid black;
+    background-color: rgb(206, 206, 206);
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+#flex p{
+    padding-top: 40px;
+}
+#lorem{
+    font-size: 20px;
+}
+#lorem span{
+    color: orange;
+}
+#bonjour{
+    text-align: right;
+}
+#style{
+   width: 6px; 
+   background: linear-gradient(to top, orange, white);
+   display: flex;
+   margin-right: 6%;
+}
+#nav{
+    width: 100%;
+    padding-top: 6%;
+}
+.th{
+    display: inline;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin: 0;
+}
+/* CORP DE LA PAGE */
+#main{
+    background-color: black;
+    padding-top: 2%;
+    margin: 0;
+}
+#corp{
+    width: 70%;
+    margin: auto;
+}
+/* PHOTO */
+#divtop{
+    margin: 0;
+    width: 100%;
+}
+#imgtop{
+    width: 100%;   
+}
+/* ARTICLE */
+#article{
+    background-color: white;
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 100%;
+}
+/* ARTICLES  */
+.art{
+    margin: 45px;
+}
+.A{
+    border: 2px solid rgb(170, 170, 170);
+    margin: auto;
+    box-shadow: 0 0 2px rgb(83, 83, 83);
+}
+.A img{
+    width: 250px;
+    height: 250px;
+}
+.A h3{
+    text-align: center;
+    font-size: 9px;
+    margin-top: 0;
+}
+.art span h2{
+    margin: 10px;
+    display: flex;
+    width: 50%;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.art span{
+    display: flex;
+}
+.B{
+    display: flex;
+    border-bottom: 1px solid black;
+    /* border-image:linear-gradient(to left, black, white) 1 100%; */
+}
+.B .p1{
+    margin-right: 15px;
+    margin-top: 8px;
+}
+.B .p2{
+    color: rgb(221, 143, 26);
+    font-size: 32px;
+    margin: 0;
+}
+.C h1{
+    display: inline-block;
+    border: 1px solid black;
+    color: orange;
+    height: 20px;
+    margin: 0;
+    background-color: rgb(78, 74, 74);
+    border-radius: 3px;
+    position: relative;
+    bottom: 300px;
+    left: 220px;
+    padding: 5px;
+}
+#art1 #art2 #art3 #art4{
+    width: 50%;
+}
+#span1{
+    display: flex;
+}
+#span2{
+    display: flex;
+}
+/* FOOTER */
+footer{
+    background-color: rgb(114, 114, 114);
+    height: auto;
+    padding-top: 30px;
+}
+#span{
+    width: 70%;
+    margin: 16%;
+    text-align: center;
+}
+.footer{
+    display: inline-block;
+    width: 16%;
+}
+hr{
+    width: 45%;
+}
+#fin{
+    text-align: center;
+    padding-top: 20px; 
+}
+#fin p{
+    color: white;
+}

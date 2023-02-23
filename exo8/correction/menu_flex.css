@@ -1,0 +1,107 @@
+header{
+    background-color: palevioletred;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    line-height:50px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 40%;
+    margin: auto;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li:hover{
+    background-color: thistle;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+/* caché les sousmenus */
+nav ul li ul{
+    display: none;
+}
+nav ul li ul li:hover{
+    background-color: palevioletred;
+    color: gold;
+}
+nav ul li:hover ul{
+    display: block;
+    background-color: thistle;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* CONTENT */
+.container{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: rgb(189, 187, 187);
+  
+}
+section:first-of-type, section:nth-of-type(2){
+    border-bottom: 1px solid;
+}
+
+/* Tous en flex le premier */
+section:not(:first-of-type){
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section:nth-of-type(2) .item{
+    width: 46%;
+    margin: 2%;
+}
+section:nth-of-type(3) .item{
+    flex:25%;
+    margin-bottom: 10%;
+}
+section img{
+    border: solid 1px;
+    border-radius: 50%;
+}
+
+/* .employe{
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.block2{
+    order: 3;
+    background-color: aquamarine;
+} */
+
+p#show{
+    display: none;
+}
+#show:target{
+    display: block;
+}
+/* p#show2{
+    display: none;
+}
+#show2:target{
+    display: block;
+} */
+
+#show:target + .close {
+    display: block;
+  }
+  
+  .close {
+    display: none;
+  }

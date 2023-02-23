@@ -1,0 +1,43 @@
+
+
+#entete {
+    background-color: rgb(236, 141, 63);
+    padding-bottom: 15px;
+    color: blue;
+    text-align: center;
+
+}
+header h1 {
+    
+}
+header h3 {
+    text-align: center;
+}
+
+
+
+nav {
+    background-color: aqua
+}
+table{
+    padding-left: 210px;
+}
+th{
+    padding-left: 50px;
+}
+
+
+#body1{
+    background-color: rgb(251, 255, 0);
+    padding-bottom: 570px;
+    
+}
+
+#body2 {
+    margin-bottom: -15px;
+}
+
+footer p{
+    background-color: rgb(236, 141, 63);
+    padding-bottom: 60px;
+}

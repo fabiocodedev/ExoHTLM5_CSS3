@@ -1,0 +1,39 @@
+*{
+    color: red;
+}
+#moussa{
+    color: black;
+    font-size: 25px;
+}
+
+.afpa{
+    background: rgb(241, 156, 156);
+}
+
+.paris{
+    cursor: pointer;
+    background: greenyellow;
+}
+
+body{
+    background: violet;
+}
+
+img{
+    width: 200px;
+    height: 100px;
+    display: block;
+}
+
+p{
+    display: inline-block;
+    
+    border: 1px solid black;
+
+    text-shadow: 2px 2px  black;
+
+    border-radius: 20px;
+
+    padding: 3% 0 0 0;
+
+}

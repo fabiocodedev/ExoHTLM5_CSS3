@@ -1,0 +1,33 @@
+table{
+	border-collapse: collapse;
+}
+
+tr td, tr th{
+	border:1px solid black;
+}
+
+
+em #hulk .afpa h1 h4{
+    color: blueviolet;
+}
+
+.afpa{
+    background: rgb(235, 154, 154);
+}
+.afpa1{
+    background: rgb(221, 16, 16);
+}
+
+.test{
+    
+
+    border: 10px double black;
+    border-radius: 20px;
+    padding: 10px;
+
+    height: auto;
+}
+
+ul li{
+    list-style: none;
+}

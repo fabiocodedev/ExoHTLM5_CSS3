@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+<h1>Les listes</h1>
+
+/* <!--Un exemple de liste non-ordonnée--> */
+<ul>
+    <li>Pomme</li>
+    <li>Vélo</li>
+    <li>Guitare</li>
+</ul>
+
+/* <!--Deux exemples de listes ordonnées--> */
+<p>Liste n°1 :</p>
+<ol>
+    <li>On naît</li>
+    <li>On grandit</li>
+    <li>On meurt</li>
+</ol>
+        
+<p>Liste n°2 :</p>
+<ol>
+    <li>Introduction</li>
+    <li>Partie I</li>
+    <li>Partie II</li>
+    <li>Conclusion</li>
+</ol>
+
+/* <!--Deux exemples de listes ordonnées avec types--> */
+<p>Liste n°1 :</p>
+<ol type="A">
+  <li>On naît</li>
+  <li>On grandit</li>
+  <li>On meurt</li>
+</ol>
+        
+<p>Liste n°2 :</p>
+<ol type="i">
+  <li>Introduction</li>
+  <li>Partie I</li>
+  <li>Partie II</li>
+  <li>Conclusion</li>
+</ol>
+
+<p>Liste n°1 :</p>
+<ol start="3">
+  <li>On naît</li>
+  <li>On grandit</li>
+  <li>On meurt</li>
+</ol>
+        
+<p>Liste n°2 :</p>
+<ol type="A" start="5">
+  <li>Introduction</li>
+  <li>Partie I</li>
+  <li>Partie II</li>
+  <li>Conclusion</li>
+</ol>
+        
+<p>Liste n°3 :</p>
+<ol start="10">
+  <li>Elément de liste 1</li>
+  <li value="7">Elément de liste 2</li>
+  <li>Elément de liste 3</li>
+</ol>
+        
+<p>Liste n°4 :</p>
+<ol>
+  <li value="10">Elément de liste 1</li>
+  <li>Elément de liste 2</li>
+  <li>Elément de liste 3</li>
+</ol>
+        
+<p>Liste n°5 :</p>
+<ol start="5">
+  <li value="3">Elément de liste 1</li>
+  <li value="7">Elément de liste 2</li>
+  <li>Elément de liste 3</li>
+</ol>
+
+<p>Liste n°1 :</p>
+<ol reversed>
+  <li>Elément de liste 1</li>
+  <li>Elément de liste 2</li>
+  <li>Elément de liste 3</li>
+</ol>
+
+<p>Liste n°2 :</p>
+<ol start="10" reversed>
+  <li>Elément de liste 1</li>
+  <li>Elément de liste 2</li>
+  <li>Elément de liste 3</li>
+</ol>
+
+/* <!-- Les liens --> */
+
+/* <!-- Vers une page web --> */
+<p>Un lien vers la page d'accueil de <a href="https://www.wikipedia.org/" target="_blank">Wikipédia</a>.</p>
+
+/* <!-- Vers un envoi de mail --> */
+<h1>Envoyer un mail</h1>
+<p>M'envoyer un <a href="mailto:pierre.giraud@edhec.com">mail</a></p>
+
+/* <!-- Vers le téléchargement d'un pdf --> */
+<h1>Cours HTML</h1>
+<p>Mon <a href="HTML.pdf" download="Cours">mail</a>à télécharger</p>
+
+
+
+
+
+/* <!-- Entités HTML --> */
+
+Le HTML possède des caractères réservés. Par exemple, vous ne pouvez pas écrire les signes « < » et « > » tels quels dans vos pages web, tout simplement car le navigateur pensera que vous venez d’ouvrir une balise d’élément.
+
+
+&lt; =	< (chevron ouvrant)
+&gt; =	> (chevron fermant)
+&amp; =	& (esperluette)
+&nbsp; =	  (espace insécable)
+
+
+
+<!-- /* Quels usages pour les éléments div et span ? */ -->
+
+<div></div>
+
+Nous allons utiliser l’élément div comme conteneur pour différents éléments afin de pouvoir ensuite facilement appliquer les mêmes styles CSS à tous les éléments contenus dans notre div par héritage ou pour les mettre en forme en appliquant un style spécifique au div
+
+Ici, le terme de « conteneur » est l’équivalent du terme « parent » : nous allons simplement placer nos différents éléments à l’intérieur de nos balises <div> et </div> puis appliquer les styles CSS directement au div.
+
+<span></span>
+
+L’élément span va lui servir de conteneur à un autre niveau : il va servir de conteneur interne à un élément plutôt que de conteneur pour plusieurs éléments.
+
+On va par exemple pouvoir placer une certaine partie du texte d’un titre ou d’un paragraphe dans un élément span pour ensuite pouvoir lui appliquer un style CSS particulier, chose qu’il nous était impossible de faire jusqu’à présent.
+
+<!-- Exemple -->
+
+<h1>Un titre de niveau 1</h1>
+
+<div>
+  <p>Un premier paragraphe</p>
+  <p>Un autre paragraphe</p>
+
+  <ul>
+    <li>Un élément de liste</li>
+    <li>Un <span>autre élément</span> de liste</li>
+  </ul>
+</div>
+
+<p>Un <span>troisième</span> paragraphe</p>
+
+<div>
+  <p>Un dernier paragraphe</p>
+</div>
+
+
+
+La grande différence entre les éléments div et span va concerner ce qu’ils vont pouvoir contenir : un élément div va pouvoir conteneur plusieurs éléments et va donc nous servir de conteneurs d’éléments tandis que l’élément span va nous servir de conteneur pour une partie du contenu d’un élément et va donc être utilisé à l’intérieur d’un élément.
+
+Cette différence est due au fait que les éléments div et span sont de niveau ou au « type » différents : l’élément div est un élément de niveau block tandis que l’élément span est un élément de niveau inline.
+
+
+

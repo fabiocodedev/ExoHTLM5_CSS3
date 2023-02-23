@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(186, 174, 228);
+    margin: 0%;
+}
+header{
+    background-color: rgb(90, 90, 221);
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+section{
+    margin:0 auto;
+    width: 80%;
+}
+section article{
+    margin-block: -16px;
+}
+article a{
+    text-decoration-line: none;
+    text-decoration: none;
+    color: black;
+}
+/* ++++++++++++++ */
+/* FLOAT/POSITION */
+/* ++++++++++++++ */
+#article1 img{
+    float: right;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 200px ;
+    height: 200px;
+    box-shadow: 5px 5px red;
+    position: relative; top: 25px; right: 25px;
+}
+#article2 img{
+    float: left;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 200px ;
+    height: 200px;
+    box-shadow: 5px 5px green;
+    position: relative; top: 25px; left: 25px;
+}
+#article3 img{
+    float: right;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 200px ;
+    height: 200px;
+    box-shadow: 5px 5px red;
+    position: relative; top: 25px; right: 25px;
+}
+#article4 img{
+    float: left;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 200px ;
+    height: 200px;
+    box-shadow: 5px 5px red;
+    position: relative; top: 25px; left: 25px;
+}
+section p{
+    block-size: 252px;
+    overflow: auto ;
+}
+/* ++++++++++++++++++++++ */
+/* PSEUDO CLASS / ELEMENT */
+/* ++++++++++++++++++++++ */
+article:nth-of-type(2n+1){
+    background-color: green;
+}
+section article:nth-of-type(2n){
+    background-color: red;
+}
+section:nth-of-type(even)::first-letter{
+    font-size: 60px;
+    color: green;
+    font-weight: bold;
+}
+section:nth-of-type(odd)::first-letter{
+    font-size: 60px;
+    color: red;
+    font-weight: bold;
+}
+footer{
+    background-color: rgb(90, 90, 221);
+    text-align: center; 
+}
+footer image{
+    resize: both;
+    width: 10px;
+    height: 10px;
+}

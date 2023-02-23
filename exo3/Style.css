@@ -1,0 +1,123 @@
+/* Page d'acceuil */
+#body{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#header{
+    background-color: rgb(32, 141, 22);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+#nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.vert{
+    background-color: aquamarine;
+    padding-top: 16px;
+    padding-bottom: 15px;
+}
+#img1{
+    margin-top: 40px;
+    display: block;
+    margin-bottom: 100px;
+}
+#lien1{
+    font-size: 25px;
+}
+#p1{
+    font-size: 18px;
+    font-weight: bold;
+}
+#lien2{
+    font-size: 18px;
+    color: blue;
+}
+#tableau1{
+    padding-top: 50px;
+    border-collapse: collapse;
+}
+caption{
+    font-size: 20px;
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 8px;
+}
+tr, th, td{
+    border: 2px solid black;
+    background-color: bisque;
+}
+.tb1{
+    color: blue;
+    background-color: bisque;
+}
+.tb2{
+    color: blue;
+    background-color: bisque;
+}
+.tb4{
+    color: blue;
+    background-color: rgb(164, 165, 167);
+}
+.tb5{
+    background-color: rgb(164, 165, 167);
+    color: rgb(247, 243, 53);
+}
+#p2{
+    font-size: 20px;
+    color: rgb(204, 81, 10);
+}
+
+
+
+
+
+/* Page nos formations */
+
+
+#c1{
+    display: inline-block;
+    padding-left: 120px;
+    padding-top: 20px;
+    text-align: center;
+}
+#c2{
+    display: inline-block;
+    padding-left: 130px;
+    padding-top: 20px;
+    text-align: center;
+}
+#c3{
+    display: inline-block;
+    padding-left: 120px;
+    padding-top: 20px;
+    text-align: center;
+}
+#c4{
+    display: inline-block;
+    padding-left: 120px;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+#tableau2{
+    border: 1px solid black ;
+    border-collapse: collapse;
+}
+.vert {
+    background-color: rgb(115, 230, 153);
+}
+.jaune {
+    background-color: rgb(240, 248, 122);
+}
+.blanc {
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+#tableau3{
+    border: 1px solid black ;
+}
